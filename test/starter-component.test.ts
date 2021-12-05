@@ -1,13 +1,13 @@
 import { html } from 'lit';
 import { fixture, expect } from '@open-wc/testing';
 
-import { StarterProject } from '../src/StarterProject.js';
-import '../src/starter-project.js';
+import { StarterComponent } from '../src/web-components/starter-component/starterComponent.component';
+import '../src/index.js';
 
-describe('StarterProject', () => {
-  let element: StarterProject;
+describe('StarterComponent', () => {
+  let element: StarterComponent;
   beforeEach(async () => {
-    element = await fixture(html`<starter-project></starter-project>`);
+    element = await fixture(html`<starter-component></starter-component>`);
   });
 
   it('renders a h1', () => {

@@ -1,9 +1,10 @@
 import { LitElement, html, css } from 'lit';
-import { property } from 'lit/decorators.js';
+import { property, customElement } from 'lit/decorators.js';
 
 const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
 
-export class StarterProject extends LitElement {
+@customElement('starter-component')
+export class StarterComponent extends LitElement {
   @property({ type: String }) title = 'My app';
 
   static styles = css`
